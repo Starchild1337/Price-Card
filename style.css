@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Typography */
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1em;
+  font-size: 1.6em;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+h3 {
+  color: hsl(61, 73%, 54%);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+h4 {
+  color: #fff;
+  font-size: 2em;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+h4 span {
+  color: hsl(177, 37%, 79%);
+  font-size: 0.5em;
+  margin-left: 15px;
+}
+
+p {
+  color: hsl(218, 22%, 67%);
+  margin-top: 1em;
+}
+
+.box-sign-up p {
+  color: #fff;
+}
+
+ul {
+  margin-top: 1rem;
+}
+
+a {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 0.9em;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Layout */
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 10px rgba(128, 128, 128, 0.1);
+  border-radius: 10px;
+}
+
+.container > * {
+  padding: 2em;
+}
+
+.box-header {
+  background-color: #fff;
+  width: 100%;
+}
+
+.box-sign-up {
+  background-color: hsl(179, 62%, 43%);
+  width: 100%;
+}
+
+.box-info {
+  width: 100%;
+  background-color: hsla(179, 62%, 43%, 0.8);
+}
+
+.btn-sign-up {
+  background-color: hsl(71, 73%, 54%);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.1em;
+  /* font-weight: 700; */
+  width: 100%;
+  padding: 15px 25px;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(46, 45, 45, 0.2);
+  cursor: pointer;
+}
+
+.btn-sign-up:hover {
+  opacity: 0.9;
+}
+
+.btn-sign-up:active {
+  transform: translateY(3px);
+}
+
+.btn-sign-up:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 568px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .box-sign-up {
+    width: 50%;
+  }
+
+  .box-info {
+    width: 50%;
+  }
+}
